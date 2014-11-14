@@ -1,0 +1,32 @@
+<h3>Employee List</h3>
+
+<button ng-click="go('/add')">Add</button>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Date Of Birth</th>
+      <th>Date of Joining</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="employe in employees">
+      <td>{{employe.id}}</td>
+      <td>
+        {{employe.name}}
+      </td>
+      <td>
+        {{employe.location}}
+      </td>
+      <td>{{employe.dob}}</td>
+      <td>{{employe.doj}}</td>
+      <td><a href="#/edit/{{employe.id}}">edit</a></td>
+      <td><a href="/#/" ng-click="delete(employe.id)">delete</a></td>
+    </tr>
+  </tbody>
+</table>

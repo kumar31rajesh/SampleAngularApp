@@ -1,0 +1,53 @@
+<div >
+  <h4>{{mode}} Details</h4>
+
+
+    <form >
+
+        <div class="form-group">
+
+            <label >ID</label>
+
+            <input type="text" class="form-control" id="id" placeholder="ID" ng-model="employee.id">
+
+        </div>
+
+        <div class="form-group">
+
+            <label >Name</label>
+
+            <input type="text" class="form-control" id="name" placeholder="Name" ng-model="employee.name">
+
+        </div>
+
+        <div class="form-group">
+
+            <label >Location</label>
+
+            <input type="text" class="form-control" id="location" placeholder="Location" ng-model="employee.location">
+
+        </div>
+
+        <div class="form-group">
+
+            <label >Date Of Birth</label>
+
+            <input type="date" class="form-control" id="dob" placeholder="Date Of Birth" ng-model="employee.dob">
+
+        </div>
+
+        <div class="form-group">
+
+            <label >Date Of Joining</label>
+
+            <input type="date" class="form-control" id="doj" placeholder="Date Of Joining" ng-model="employee.doj">
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary" ng-click="saveRecord();">Save</button>
+
+    </form>
+
+
+</div>
